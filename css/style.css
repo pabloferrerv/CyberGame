@@ -1,0 +1,10 @@
+ .videojuegos{
+ 	display: grid;
+ 	 grid-template-columns: repeat(4, 1fr 1fr);
+ }
+ .desc{
+ 	background-color: #6F5E5E;
+ 	margin:1%;
+
+ }
+
