@@ -13,6 +13,10 @@
 	if($p=="borra"){
 		include("formBaja.php");
 	}
+	if($p=="infoVid"){
+		include("infoVideojuego.php");
+	}
+
 ?>
 
 <?php require("pie.php");?>

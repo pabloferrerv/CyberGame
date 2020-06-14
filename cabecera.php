@@ -173,6 +173,7 @@ if(isset($_GET['a'])){
                         <li><a <?php if($p=="alta") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=alta">alta usuario</a></li>
                         <li><a <?php if($p=="modif") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=modif">modifica usuario</a></li>
                         <li><a <?php if($p=="borra") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=borra">baja usuario</a></li>
+                        <li><a <?php if($p=="infoVid") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=infoVid">Info Videojuego</a></li>
 						<?php } ?>
                     </ul>
                 </div>

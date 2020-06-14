@@ -84,7 +84,7 @@ if (isset($_POST['publicar'])){
 
 	  	if (isset($_POST['publicar'])){
 			if(isset($_FILES["imagen"])){//si le has dado al boton seleciionar archivo entra aquí
-				echo "hola que tal estas";
+				
 				$imagen=$_FILES["imagen"]["name"];
 				$imagenTemp=$_FILES["imagen"]["tmp_name"];
 				$imagend=$_FILES['imagen']['name'];
@@ -134,7 +134,7 @@ echo $msg;
   $cuantos=count($videojuegos);
   if($cuantos>0){
 	  echo "<h1>Mostrando los videojuegos ". ($comienzo+1) ." a ". (COMENTxPAG+$comienzo)." </h1>";
-	  //var_dump($comentarios);
+	 
 	    echo "<div class=videojuegos>";
 	  for($cont=0;$cont<$cuantos;$cont++){
 			  $nombre = $videojuegos[$cont]['nombre'];
@@ -144,17 +144,23 @@ echo $msg;
 			  $plataforma = $videojuegos[$cont]['plataforma'];
 			  $imagen = $videojuegos[$cont]['imagen'];
 			  $entrada="<p><b>$nombre</b> <img src='$imagen'>  Tiene un precio de <i>$precio</i> €"; 
-			  echo '<div class="desc">';
-				echo '<p class="lead">'.$entrada.'</p>';
+			  
+			  ?>	
+			 
+			 <div class="desc">'
+			  <!-- Al darle click al producto envia la id por get para que despliegue una pagina con la informacion del videojuego -->
+				<p class="lead"> <a <?php if($p=="infoVid") echo 'class="active"' ?> href='<?php echo $_SERVER['PHP_SELF'] ?>?P=infoVid&V=<?php echo $id_vid ?>'> <?php echo $entrada ?> </a></p> 
+
+				<?php
 				if($tipo_usr=="adm") echo '<p><a href="index.php?b='.$id_vid.'"><button>Borrar</button></a></p>';
 
-			  echo '</div>';
+			  echo '</div> ' ;
 			  echo '<div class="testi-meta">';
 					
 					
-			  echo '</div>';	 
+			  echo '</div> ';	 
 	  }
-	   echo "</div>";
+	   echo "</div> " ;
 	  if ($total>COMENTxPAG){
 		if ($comienzo+COMENTxPAG< $total){
 			$comienzo=$comienzo+COMENTxPAG;

@@ -71,21 +71,21 @@ class Videojuego {
 		return $total;
 	}
 	
-	public static function buscaComentariosUsr($id_usr){
-		$comentarios=[];
-		$sql="select * from videojuegos,usuarios where nombre.id_usr=usuarios.id_usr and nombre.id_usr=$id_usr";
+	public static function buscaVideojuego($id_pro){
+		$videojuegos=[];
+		$sql="select * from videojuegos where id_pro=$id_pro";
 		//echo $sql;
 		$conexion=Conexion::conectarBD();
 		$res=$conexion->query($sql);
 		if ($res->num_rows >0){
 			while ($linea=$res->fetch_assoc()){
-				$comentarios[]=$linea;
+				$videojuegos[]=$linea;
 			}
 		}
 		$res->free();
 		Conexion::desconectarBD($conexion);
 
-		return $comentarios;
+		return $videojuegos;
 	}
 	
 	public function borrarVideojuego(){
