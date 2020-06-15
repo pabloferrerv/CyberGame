@@ -104,5 +104,23 @@ class Videojuego {
 		return $msg;
 		
 	}
+
+		public function restaVideojuego($stock,$id_vid){
+		$stockcres=0;	
+		$stockcres=$stock-1;
+		$msg="";
+		$sql = "update videojuegos set stock='$stockcres' where  id_pro='$id_vid'";
+		//echo $sql;
+		$conexion=Conexion::conectarBD();
+		if ($conexion->query($sql))
+			$msg="Modificado correctamente";
+		else{
+			$msg="Error al modificar usuario en la  BD". $conexion->error;
+		}
+		Conexion::desconectarBD($conexion);
+
+		
+
+	}
 }
 ?>

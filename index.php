@@ -16,6 +16,17 @@
 	if($p=="infoVid"){
 		include("infoVideojuego.php");
 	}
+		if($p=="misPed"){
+		include("misPedidos.php");
+	}
+
+		if($p=="compra"){
+		include("compra.php");
+	}
+
+		if($p=="factura"){
+		include("factura.php");
+	}
 
 ?>
 

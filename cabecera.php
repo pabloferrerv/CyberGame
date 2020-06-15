@@ -9,6 +9,7 @@ require_once("lib/conexion.php");
 require("lib/varios.php");
 require_once("clases/Usuario.php");
 require_once("clases/Videojuego.php");
+require_once("clases/Ventas.php");
 
 define("COMENTxPAG", 6);
 define("ESPERA", 10); //TIEMPO A ESPERAR ANTES DE PUBLICAR OTRA VEZ
@@ -168,12 +169,13 @@ if(isset($_GET['a'])){
 							<li><a <?php if($p=="login") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=login">Loguearse</a></li>
 						<?php }else{ ?>
 							<li><a href="<?php echo $_SERVER['PHP_SELF'] ?>?a=logout">Salir</a></li>
+							<li><a <?php if($p=="misPed") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=misPed">Mis Pedidios</a></li>
 						<?php } ?>
 						<?php if(isset($email) and $tipo_usr=="adm"){ ?>
                         <li><a <?php if($p=="alta") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=alta">alta usuario</a></li>
                         <li><a <?php if($p=="modif") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=modif">modifica usuario</a></li>
                         <li><a <?php if($p=="borra") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=borra">baja usuario</a></li>
-                        <li><a <?php if($p=="infoVid") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=infoVid">Info Videojuego</a></li>
+                        
 						<?php } ?>
                     </ul>
                 </div>

@@ -1,5 +1,9 @@
 
     <?php
+
+
+
+
     if(isset($_GET['V'])){
 	$identidad=$_GET['V'];
 	
@@ -20,7 +24,6 @@
   			 $entrada="<p><b>$nombre</b>$descripcion<img src='$imagen'>  Tiene un precio de <i>$precio</i> €";
   			 echo $entrada ?></p> 
 
- 			<?php
-  			 if($tipo_usr=="adm"||$tipo_usr=="usr") echo '<p><a href="index.php?b='.$id_vid.'"><button>Comprar</button></a></p>';
-			
-		?>
+ 			
+  		
+	 <p><a <?php if($p=="compra") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=compra&c=<?php echo $id_vid ?>"><button>Comprar</button></a></p>
