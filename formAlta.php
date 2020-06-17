@@ -14,7 +14,7 @@
 			if(!empty($nombre) and !empty($email)and !empty($pass)and !empty($pass2)){
 				if(correoCorrecto($email)){
 					if($pass==$pass2){
-						$usr=new Usuario("",$nombre,$email,$pass,$tipo);
+						$usr=new Usuario("",$nombre,$pass,$email,$tipo);
 						if(!$usr->buscarUsuario()){
 							$msg=$usr->guardarUsuario();
 						}
@@ -34,8 +34,8 @@
 		echo $msg;
 	?>
 	
-	<div id="contact" class="section wb">
-        <div class="container">
+	
+        
             <div class="section-title text-center">
                 <h3>ALTA NUEVO USUARIO</h3>
                 <p class="lead">Completa los campos con los datos del nuevo usuario</p>

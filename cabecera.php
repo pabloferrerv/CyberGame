@@ -138,7 +138,7 @@ if(isset($_GET['a'])){
 						if(!isset($email)){ //comprueba si no estas logueado, y sino lo estas te muestra la opcion de loguin
 						?>
 							<span class="fa fa-user" ></span>
-						<div id="usuario"><a <?php if($p=="login") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=login">Loguin</a> </div>
+						<div id="usuario"><a <?php if($p=="login") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=login">Login</a> </div>
 
 						<?php }else{ //si estas logueado muestra el icono y tu nombre de usuario?>
 					
@@ -169,7 +169,7 @@ if(isset($_GET['a'])){
                     <ul class="nav navbar-nav navbar-right">
                         <li><a <?php if($p=="home") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=home">Inicio</a></li>
 						<?php if(!isset($email)){ ?>
-							<li><a <?php if($p=="login") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=login">Loguin</a></li>
+							<li><a <?php if($p=="login") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=login">Login</a></li>
 						<?php }else{ ?>
 							<li><a href="<?php echo $_SERVER['PHP_SELF'] ?>?a=logout">Salir</a></li>
 							<li><a <?php if($p=="misPed") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=misPed">Mis Pedidios</a></li>

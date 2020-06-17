@@ -1,6 +1,5 @@
 
-    <div id="contact" class="section wb">
-        <div class="container">
+    
             <div class="section-title text-center">
                 <h3>LOGIN USUARIO</h3>
                 <p class="lead">Completa los campos de login</p>

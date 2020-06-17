@@ -12,7 +12,7 @@
 				 $id_vid=$convideojuego[0]['id_pro'];
 			 	 $plataforma = $convideojuego[0]['plataforma'];
 			 	 $imagen = $convideojuego[0]['imagen'];
-  				 $entrada="<div><div><span><img src='$imagen'</span></div><div id='cajprop'><span>Nombre videojuego: <b>$nombre</b></span><span>Codigo Videojuego: $id_vid </span><span>Precio: $precio  €</span></div> <div id='cajplataf'><span>Plataforma de juego->  $plataforma </span> </div>";
+  				 $entrada="<div><div><span><img src='$imagen'  width='100%'</span></div><div id='cajprop'><span>Nombre videojuego: <b>$nombre</b></span><span>Codigo Videojuego: $id_vid </span><span>Precio: $precio  €</span></div> <div id='cajplataf'><span>Plataforma de juego->  $plataforma </span> </div>";
   				 echo $entrada." </div>";
 				
 			}

@@ -3,16 +3,16 @@ class Usuario {
 	
 	private $id_usr; 
 	private $nombre;
-	private $email;
 	private $pass; 
+	private $email;
 	private $tipo;
 	
 
 	function __construct($id_usr,$nombre,$email,$pass,$tipo) {
 		$this->id_usr=$id_usr;
 		$this->nombre=$nombre;
-		$this->email=$email;
 		$this->pass=$pass;
+		$this->email=$email;
 		$this->tipo=$tipo;
 	}
 	

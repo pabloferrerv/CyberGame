@@ -156,7 +156,7 @@ a,
     font-size: 16px;
 }
 .email-box a:hover{
-    color: #fd6802;
+    color: #620D0D;
 }
 .email-box a i{
     padding: 0px 5px;
@@ -170,7 +170,7 @@ a,
     font-size: 16px;
 }
 .phone-box a:hover{
-    color: #fd6802;
+    color: #620D0D;
 }
 .phone-box a i{
     padding: 0px 5px;
@@ -190,7 +190,7 @@ a,
     font-size: 20px;
 }
 .social-box ul li a:hover{
-    color: #fd6802;
+    color: #620D0D;
 }
 
 
@@ -276,7 +276,7 @@ background-color:  #282828;
     color: #FFFFFF;
     box-shadow: 0 10px 20px 0 #1A1A1A;
     border-radius: 5px;
-    background: #640404;
+    background: #620D0D;
 }
 
 .header_style_01 .navbar-default .navbar-nav > li:hover a,
@@ -285,7 +285,7 @@ background-color:  #282828;
     padding: 15px 15px;
     box-shadow: 0 10px 20px 0 #1A1A1A;/* COLOR SOMBRA Y PROFUNDIDAD */
     border-radius: 5px;
-    background: #640404;/* COLOR FONNDO LETRAS MENU AL PASAR POR ENCIMA */
+    background: #620D0D;/* COLOR FONNDO LETRAS MENU AL PASAR POR ENCIMA */
 }
 
 
@@ -391,25 +391,11 @@ li.social-links a {
 
 
 .desc h3 i {
-    color: #fd6802;
+    color: #620D0D;
     font-size: 37px;
     vertical-align: middle;
     margin-right: 12px;
 }
-
-.desc {  /* FONDO DE LAS CAJAS DE LOS VIDEOJUEGOS */
- 
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -432,7 +418,7 @@ li.social-links a {
 
 .has-error .bootstrap-select .dropdown-toggle,
 .error .bootstrap-select .dropdown-toggle {
-    border-color: #b94a48;
+    border-color: #620D0D;
 }
 
 .bootstrap-select.fit-width {
@@ -879,7 +865,7 @@ select.mobile-device {
 
 .footer-links a:hover,
 .footer a:hover {
-    color: #640404 !important; /* color al pasar por encima de letras footer */
+    color: #620D0D !important; /* color al pasar por encima de letras footer */
 }
 
 .footer-links li {
@@ -956,7 +942,7 @@ select.mobile-device {
 }
 
 .footer-distributed .footer-company-name a:hover{
-    color: #fd6802;
+    color: #620D0D;
 }
 
 
@@ -1066,11 +1052,11 @@ select.mobile-device {
 }
 
 .dmtop:hover {
-    background-color: #fd6802;
+    background-color: #620D0D; /* color boton scroll superior */
 }
 
 .icon_wrap {
-    background-color: #fd6802;
+    background-color: #620D0D;
     width: 100px;
     height: 100px;
     display: block;
@@ -1086,7 +1072,7 @@ select.mobile-device {
 .stat-wrap h3 {
     font-size: 22px;
     font-weight: 600;
-    color: #fcbf02;
+    color: #620D0D;
     margin: 0 !important;
     padding: 0 !important;
     line-height: 1 !important:
@@ -1108,7 +1094,7 @@ select.mobile-device {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #fd6802;
+    background: #620D0D;
     z-index: 11000;
     position: fixed;
     display: block;
@@ -1743,7 +1729,7 @@ font-size: 20px;
 }
 
 #pedidos div{
-    background-color: #E2D5D5;
+    background-color: #DDDDDD;
     margin-bottom: 0.8%;
     margin-top: 0.8%;
     display: flex;
@@ -1846,7 +1832,7 @@ margin-right: 2%;
 .social-box{
     text-align: center;
     margin:2%;
-    margin-right: 7%;
+    
     padding: 10px 20px 10px 20px;
     
     background-color: #BDB9B9;
@@ -1879,13 +1865,11 @@ font-size: 25px;
    /*  ----------------footer------------- */
 
 
-.footer-right{
-    float: right;
-}
+
 
 .footer-right ul li{
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 12px;
 }
 
 .footer-right ul li a{
