@@ -11,7 +11,7 @@ require_once("clases/Usuario.php");
 require_once("clases/Videojuego.php");
 require_once("clases/Ventas.php");
 
-define("COMENTxPAG", 6);
+define("COMENTxPAG", 8);
 define("ESPERA", 10); //TIEMPO A ESPERAR ANTES DE PUBLICAR OTRA VEZ
 $msg="";
 if (isset($_POST['publicar'])){
@@ -83,10 +83,11 @@ if(isset($_GET['a'])){
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Site CSS -->
     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="style.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+   
 
     <!-- Modernizer for Portfolio -->
     <script src="js/modernizer.js"></script>
@@ -125,24 +126,26 @@ if(isset($_GET['a'])){
 			<div class="row">
 				<div class="col-md-6 col-sm-6">
 					<div class="left-top">
-						<div class="email-box">
-							<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> youremail@gmail.com</a>
-						</div>
-						<div class="phone-box">
-							<a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> +1 234 567 890</a>
-						</div>
+						<h1 id="titulop">CYBERGAME</h1>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6">
 					<div class="right-top">
 						<div class="social-box">
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-							<ul>
+						
+						<?php 
+
+						if(!isset($email)){ //comprueba si no estas logueado, y sino lo estas te muestra la opcion de loguin
+						?>
+							<span class="fa fa-user" ></span>
+						<div id="usuario"><a <?php if($p=="login") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=login">Loguin</a> </div>
+
+						<?php }else{ //si estas logueado muestra el icono y tu nombre de usuario?>
+					
+						<span class="fa fa-user" ></span>
+						<div id="usuario"><?php if(isset($email)) echo "$nombre"?> </div>
+
+						<?php }  ?>
 						</div>
 					</div>
 				</div>
@@ -159,14 +162,14 @@ if(isset($_GET['a'])){
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt="image"></a>
-					<?php if(isset($email)) echo "Usario actual: $nombre"?>
+                    
+					
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a <?php if($p=="home") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=home">Inicio</a></li>
 						<?php if(!isset($email)){ ?>
-							<li><a <?php if($p=="login") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=login">Loguearse</a></li>
+							<li><a <?php if($p=="login") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=login">Loguin</a></li>
 						<?php }else{ ?>
 							<li><a href="<?php echo $_SERVER['PHP_SELF'] ?>?a=logout">Salir</a></li>
 							<li><a <?php if($p=="misPed") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=misPed">Mis Pedidios</a></li>
@@ -175,6 +178,7 @@ if(isset($_GET['a'])){
                         <li><a <?php if($p=="alta") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=alta">alta usuario</a></li>
                         <li><a <?php if($p=="modif") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=modif">modifica usuario</a></li>
                         <li><a <?php if($p=="borra") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=borra">baja usuario</a></li>
+                          <li><a <?php if($p=="añad") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=añad">Añadir Juego</a></li>
                         
 						<?php } ?>
                     </ul>

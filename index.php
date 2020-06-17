@@ -20,6 +20,12 @@
 		include("misPedidos.php");
 	}
 
+			if($p=="añad"){
+		include("añadirJuego.php");
+	}
+
+
+
 		if($p=="compra"){
 		include("compra.php");
 	}
