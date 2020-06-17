@@ -1681,9 +1681,11 @@ select.mobile-device {
 
 /* --------VIDEOJUEGOS-------- */
  .videojuegos{
+ 	margin-top: 8%;
     display: grid;
      grid-template-columns: repeat(2, 1fr 1fr);
-     padding-bottom: 15%;
+     margin-bottom: 2%;
+
 
  }
  .desc{
@@ -1692,6 +1694,7 @@ select.mobile-device {
     margin-bottom:15%;
     display: flex;
     justify-content: center;
+     flex-direction: column;
 
  }
 
@@ -1700,6 +1703,30 @@ width: 100%;
  }
 
  
+ #precyborrar{
+
+display: flex;
+justify-content: space-between;
+font-size: 20px;
+
+ }
+
+ #precio{
+ 	background-color: #C9CAD0;
+ 	text-align: center;
+ 	width: 100%;
+ 	border: 1px solid #353535;
+ 
+ }
+#precyborrar a{
+
+ 	text-align: center;
+ 	width: 100%;
+ 	border: 1px solid #353535;
+ 	background-color: #B27706;
+
+ }
+
 
 
 
@@ -1869,3 +1896,12 @@ font-size: 25px;
     color: #fd6802;
 }
 
+
+/* ---------------botones nex pagina------------ */
+
+#nextpagi{
+    margin-bottom: 4%;
+    margin-left: 2%;
+    font-size: 2vh;
+
+}

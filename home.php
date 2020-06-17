@@ -46,7 +46,7 @@ if(isset($_GET['comienzo'])){
   $videojuegos=Videojuego::verVideojuegos(COMENTxPAG,$comienzo);
   $cuantos=count($videojuegos);
   if($cuantos>0){
-	  echo "<h1>Mostrando los videojuegos ". ($comienzo+1) ." a ". (COMENTxPAG+$comienzo)." </h1>";
+	
 	 
 	    echo "<div class=videojuegos>";
 	    
@@ -57,17 +57,18 @@ if(isset($_GET['comienzo'])){
 			  $id_vid=$videojuegos[$cont]['id_pro'];
 			  $plataforma = $videojuegos[$cont]['plataforma'];
 			  $imagen = $videojuegos[$cont]['imagen'];
-			  $entrada="<p> <span><img src='$imagen' width='100%' height='100%'></span> <span><i>$precio</i> €</span>"; 
+			  $entrada="<span><img src='$imagen' width='100%' height='100%'></span> "; 
 			  
 			  ?>	
-			 
+			
 			 <div class="desc">
 			  <!-- Al darle click al producto envia la id por get para que despliegue una pagina con la informacion del videojuego -->
 				 <a <?php if($p=="infoVid") echo 'class="active"' ?> href='<?php echo $_SERVER['PHP_SELF'] ?>?P=infoVid&V=<?php echo $id_vid ?>'> <?php echo $entrada ?> </a>
 
 				<?php
-				if($tipo_usr=="adm") echo '<span><a href="index.php?b='.$id_vid.'"><button>Borrar</button></a></span>';
-
+				echo "<div id='precyborrar' ><span id='precio'><i>$precio</i> €</span>";
+				if($tipo_usr=="adm") echo '<a href="index.php?b='.$id_vid.'"><span>Borrar</span></a>';
+				 echo '</div>';
 			  echo '</div> ' ;
 			
 	  }
@@ -80,7 +81,7 @@ if(isset($_GET['comienzo'])){
 		else{
 			$verAnteriores="";
 		}
-		echo '<div id="navbar" class="navbar-collapse collapse">';
+		echo '<div id="nextpagi">';
 		echo "<a href='{$_SERVER['PHP_SELF']}'>Volver Principio </a> &nbsp;&nbsp $verAnteriores";
 		echo '</div>';
 		
