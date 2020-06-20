@@ -1,3 +1,4 @@
+
 /*------------------------------------------------------------------
     Version: 1.0
 -------------------------------------------------------------------*/
@@ -48,11 +49,11 @@
 -------------------------------------------------------------------*/
 
 body {
-    opacity: 0;
-    background-color:  #949292; /* color de fondo */
+    opacity: 0%;
+    background-color:  #949292;
     color: #020202;
     font-size: 15px;
-    font-family: 'Raleway', sans-serif;
+   font-family: 'Play', sans-serif; /* Tipografia textos */
     line-height: 1.80857;
 }
 
@@ -93,7 +94,8 @@ h2 {
 }
 
 h3 {
-    font-size: 18px
+    font-size: 18px;
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 h4 {
@@ -113,7 +115,7 @@ h6 {
 
 
 a {
-    color: #000000; /* COLOR SIGUIENTE Y VOLVER AL PRINCIPIO */
+    color: #000000; /* COLOR BLOQUES VIDEOJUEGOS */
     text-decoration: none;
     outline: none;
 }
@@ -244,8 +246,8 @@ header{
     z-index: 111;
 }
 
-.header_style_01 .navbar-default { /* BLOQUE INTERIOR DEL MENÚ */
-    background-color:  #282828 !important;  /* //Fondo de la barra de menú */
+.header_style_01 .navbar-default { /* BLOQUE INTERIOR DEL MENÚ SE HACE INVISIBLE PARA QUE NO SE */
+    background-color:  #282828 !important; 
     border: 0;
     border-radius: 0px;
 }
@@ -282,7 +284,7 @@ background-color:  #282828;
 
 .header_style_01 .navbar-default .navbar-nav > li:hover a,
 .header_style_01 .navbar-default .navbar-nav > li:focus a {
-    color: #FFFFFF;/* COLOR LETRAS MENU AL PASAR POR ENCIMA */
+    color: #ECECEC;/* COLOR LETRAS MENU AL PASAR POR ENCIMA */
     padding: 15px 15px;
     box-shadow: 0 10px 20px 0 #1A1A1A;/* COLOR SOMBRA Y PROFUNDIDAD */
     border-radius: 5px;
@@ -379,7 +381,6 @@ li.social-links a {
     margin: 0 0 25px;
     padding: 0;
     text-transform: none;
-    color: #2F2F2F;
 }
 
 
@@ -420,7 +421,7 @@ li.social-links a {
 
 .has-error .bootstrap-select .dropdown-toggle,
 .error .bootstrap-select .dropdown-toggle {
-    border-color: #312C30;
+    border-color: #620D0D;
 }
 
 .bootstrap-select.fit-width {
@@ -508,7 +509,7 @@ li.social-links a {
 }
 
 .bootstrap-select.btn-group .dropdown-menu {
-    border: 1px solid #51484F;
+    border: 1px solid #ededed;
     box-shadow: none;
     box-sizing: border-box;
     min-width: 100%;
@@ -736,19 +737,19 @@ select.mobile-device {
     color: #bcbcbc !important;
 }
 
-.contact_form { /* Formularios */
+.contact_form {
     border: 1px solid #ededed;
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 1); 
-    background-color: #555454; /* Color fondo formulario */
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 1);
+    background-color: #949292;
     padding: 40px 30px;
 }
 
-.contact_form .form-control { /* parametros tdentro formulario */
+.contact_form .form-control { /* parametros tipo de formulario */
     background-color: #fff;
     margin-bottom: 30px;
     border: 1px solid #ebebeb;
     box-sizing: border-box;
-    color: #B01A1A;
+    color: #BCBCBC;
     font-size: 16px;
     outline: 0 none;
     padding: 10px 25px;
@@ -766,7 +767,7 @@ select.mobile-device {
 
 .contact_form .form-control::-webkit-input-placeholder {
 
-    color: #bcbcbc; /* COLOR LETRAS placeholder */
+    color: #bcbcbc; /* COLOR LETRAS FORMULARIO */
 }
 
 .contact_form .form-control::-moz-placeholder {
@@ -778,6 +779,9 @@ select.mobile-device {
     color: #bcbcbc;
 }
 
+#contact {
+    background: #949292; /* COLOR FONDO FORMULARIOS */
+}
 
 
 /*------------------------------------------------------------------
@@ -813,7 +817,7 @@ select.mobile-device {
 .footer {
     padding: 90px 0 80px !important;
     color: #999;
-    background-color: #393939;/*  color fondo footer */
+    background-color: #393939;
 }
 
 .footer .widget-title {
@@ -830,7 +834,7 @@ select.mobile-device {
 }
 
 .footer .widget-title h3 {
-    color: #fff; /* color titulos footer */
+    color: #fff;
     font-weight: 500;
     font-size: 21px;
     padding: 0;
@@ -844,7 +848,7 @@ select.mobile-device {
 }
 
 .footer-links a {
-    color: #999; /* color enlaces  */
+    color: #999;
     display: block;
 }
 
@@ -900,7 +904,7 @@ select.mobile-device {
 
 .copyrights {
     border-top: 1px dashed rgba(255, 255, 255, 0.1);
-    background-color: #1f1f1f; /* fondo barra inferior */ 
+    background-color: #1f1f1f;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -932,16 +936,16 @@ select.mobile-device {
 .footer-distributed .footer-company-name {
     font-weight: 300;
     margin: 0 10px;
-    color: #666;/* color letras derechos */
+    color: #666;
     padding: 0;
 }
 
 .footer-distributed .footer-company-name a{
-    color: #ffffff; /*color de titulo cybergame y html design */
+    color: #ffffff;
 }
 
 .footer-distributed .footer-company-name a:hover{
-    color: #620D0D; /* color de titulo cybergame y html design */
+    color: #620D0D;
 }
 
 
@@ -962,13 +966,39 @@ select.mobile-device {
     position: relative;
 }
 
+.footer-distributed form input {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #181818;
+    border: none;
+    font: inherit;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+    width: 100%;
+    padding: 18px 50px 18px 18px;
+}
 
 .footer-distributed form input:focus {
     outline: none;
 }
 
 
+/* Changing the placeholder color */
 
+.footer-distributed form input::-webkit-input-placeholder {
+    color: #999;
+}
+
+.footer-distributed form input::-moz-placeholder {
+    opacity: 1;
+    color: #999;
+}
+
+.footer-distributed form input:-ms-input-placeholder {
+    color: #999;
+}
 
 
 /* The magnify glass icon */
@@ -989,7 +1019,14 @@ select.mobile-device {
     MISC FUNCION DE SUBIR ARRIBA EN LA PAGINA
 -------------------------------------------------------------------*/
 
-
+.progress {
+    background-color: #f2f3f5;
+    border-radius: 0;
+    box-shadow: none;
+    height: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
 
 .skills h3 {
     color: #999999;
@@ -997,7 +1034,7 @@ select.mobile-device {
 }
 
 .dmtop {
-    background-color: #3C3D41; /* color boton subir */
+    background-color: #3C3D41;
     z-index: 100;
     width: 50px;
     height: 50px;
@@ -1518,7 +1555,7 @@ select.mobile-device {
 
 
 
-.btn-light { /* BOTON FORMULARIOS y COMPRAS */
+.btn-light { /* BOTON FORMULARIOS */
     padding: 13px 40px;
     font-size: 18px;
     border: 1px solid #1E1E1E;
@@ -1552,7 +1589,8 @@ select.mobile-device {
     left: 0px;
     top: 0px;
     width: 100%;
-    padding: 0px 0px; /* color de la barra fija */
+    padding: 0px 0px;
+    background: rgba(70, 66, 68, 0.85); /* color de la barra fija */
     z-index: 0;
     transition: all 1s ease-in-out;
     z-index: 999;
@@ -1618,11 +1656,16 @@ select.mobile-device {
     color: #393939;
 }
 
+.address-item h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #fd6802;
+}
+
 
 .dmtop.show {
     bottom: 20px;
 }
-
 
 /* --------VIDEOJUEGOS-------- */
 
@@ -1807,13 +1850,21 @@ margin-right: 2%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    transition: transform 1s; /* transicion de 1s de duracion de la caja de login */
+}
+
+.social-box:hover{
+    transform: scale(1.2);  /* Transformacion,que hace un 2 por ciento mas grande la caja */
 }
 
 .social-box span{
 color: #620D0D;
 font-size: 25px;
 
+
 }
+
+
 
 #titulop{ /* titulo de la cabecera */
     margin: 3%;
@@ -1854,9 +1905,19 @@ font-size: 25px;
 #nextpagi{
     margin-bottom: 4%;
     margin-left: 2%;
-    font-size: 2vh;
+    font-size: 1.7vh;
+    width: 200px;
+    transition: transform 1s; /* transicion que transforma la caja contenedora mas grande */
+
+
 
 }
+
+#nextpagi:hover{
+    transform: scale(1.2);/* transofrmacion,que transforma la caja un 2 por ciento mas grande */
+   
+}
+
 
 /* --------------------Reloj--------------------- */
 #reloj {display: flex;justify-content: space-around;}
@@ -1869,3 +1930,10 @@ font-size: 25px;
 
 
 }
+
+/* ------------Divs apra validacion formularios con java script------------ */
+.errores{
+    display: none;
+    color: red;
+}
+

@@ -47,19 +47,26 @@
                         <div id="message"></div>
                         <form id="altaform" class="row" action="index.php?P=alta" name="altaform" method="post" onsubmit="return validarForm2();">
                             <fieldset class="row-fluid">
+                            	  <div id="mensaje1" class="errores">Nombre incorrecto</div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+                                  
                                 </div>
+                                 <div id="mensaje2" class="errores">email incorrecto</div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="text" name="email" id="email" class="form-control" placeholder="email usuario">
+                                    
                                 </div>
 									 
-                                
+                                 <div id="mensaje3" class="errores">Contraseña incorrecta</div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="password" name="pass" id="pass" class="form-control" placeholder="Password">
+                                    
                                 </div>
+                                <div id="mensaje4" class="errores">Contraseña incorrecta</div>
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="password" name="pass2" id="pass2" class="form-control" placeholder="Repite Password">
+                                     
                                 </div>
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								Tipo usuario:

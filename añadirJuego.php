@@ -1,7 +1,7 @@
 <div id="contact" class="section wb">
 <div class="container">
 	<div class="section-title text-center">
-		<h3>Añadir videojuego</h3>
+		<h3>AÑADIR VIDEOJUEGOS</h3>
 	</div>
 
 	<div class="row">
@@ -10,21 +10,27 @@
 				<div id="message"></div>
 				<form id="loginform" class="row" action="<?php $_SERVER['PHP_SELF']?>" name="loginform" method="post" onsubmit="return validarForm();" enctype="multipart/form-data">
 					<fieldset class="row-fluid">
+						<div id="mensajej1" class="errores">Nombre incorrecto</div>
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<input type="text" name="nombre" size="15" id="nombre" class="form-control" placeholder="Nombre"  ><br>
 							</div>
+							<div id="mensajej2" class="errores">Precio incorrecto</div>
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<input type="text" name="precio" id="precioo" size="15" class="form-control" placeholder="Precio"  ><br>
 							</div>
+							<div id="mensajej3" class="errores">Descripcion incorrecta</div>
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<textarea cols="70" rows="4" name="descripcion" id="descripcion" class="form-control" placeholder="Descripcion"  ></textarea><br>
 							</div>
+							<div id="mensajej4" class="errores">Plataforma incorrecto</div>
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<input type="text" name="plataforma" id="plataforma" size="15" class="form-control" placeholder="Plataforma"  ><br>
 							</div>
+							<div id="mensajej5" class="errores">Stock incorrecto</div>
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<input type="number" name="stock" id="stock" size="15" class="form-control" placeholder="Stock"  ><br>
 							</div>
+							<div id="mensajej6" class="errores">Instrucciones incorrectas</div>
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<textarea cols="70" rows="4" name="instrucciones" id="instrucciones" class="form-control" placeholder="Instrucciones"  ></textarea><br>
 							</div>

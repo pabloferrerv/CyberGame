@@ -76,22 +76,24 @@ var div=$(".videojuegos");
     
 
 if(expreg.test(nombre)){
-        
+        $("#mensajej1").fadeOut();
                    
         if (expprecio.test(precio)) {
+          $("#mensajej2").fadeOut();
          
             if (expreg.test(descripcion)) {
+              $("#mensajej3").fadeOut();
                 
                 
             if (expreg.test(plataforma)) {
-                 
+                 $("#mensajej4").fadeOut();
                 
             if (expstock.test(stock)) { //una vez que se comprueba que todo este correcto se genera un span con un formulario
    
-
+              $("#mensajej5").fadeOut();
 
                    if (expinstr.test(instrucciones)) { //una vez que se comprueba que todo devuelve true a al funcion onsubmit valdiar formularios
-               
+                $("#mensajej6").fadeOut();//si esta bien la validacion vuelve a ocultar el div
                 return true;
                
    
@@ -100,28 +102,28 @@ if(expreg.test(nombre)){
 
             }else{
 
-        alert("Instrucciones Incorrectas"); return false;}  
+        $("#mensajej6").fadeIn(); return false;}  //si esta mal la validacion muestra el div
    
 
                 
 
             }else{
 
-        alert("Stock Incorrecto"); return false;}   
+         $("#mensajej5").fadeIn(); return false;}   
             
             }else{
-       alert("Plataforma Incorrectas"); return false;}   
+        $("#mensajej4").fadeIn(); return false;}   
 
             }else{
-        alert("Descripción incorrecta"); return false;}   
+         $("#mensajej3").fadeIn(); return false;}   
 
             
         }else{
-       alert("Precio Incorrecto"); return false;}   
+        $("#mensajej2").fadeIn(); return false;}   
 
         
     }else{
-       alert("Usuario Incorrecto"); return false;
+      $("#mensajej1").fadeIn(); return false;
         
     }
 
@@ -150,30 +152,38 @@ if(expreg.test(nombre)){
     
 
 if(expreg.test(nombre)){
-        
+        $("#mensaje1").fadeOut(); //si esta bien la validacion vuelve a ocultar el div
                    
         if (expregcorr.test(email)) {
+           $("#mensaje2").fadeOut();
+
          
             if (expcont.test(pass)) {
+               $("#mensaje3").fadeOut();
                 
                 
             if (expcont.test(pass2)) {
+               $("#mensaje4").fadeOut();
                  
           return true;
             
             }else{
-       alert("Pass2 Incorrecto"); return false;}   
+       $("#mensaje4").fadeIn(); }   
+
 
             }else{
-        alert("Pass1 incorrecta (debe tener minimo 8 caracteres,una letra mayuscula,y un caracter especial)"); return false;}   
+        $("#mensaje3").fadeIn(); return false;}   
 
             
         }else{
-       alert("Email Incorrecto"); return false;}   
+          $("#mensaje2").fadeIn();
+        return false;
+
+      }   
 
         
     }else{
-       alert("Nombre Incorrecto"); return false;
+       $("#mensaje1").fadeIn(); return false;//si esta mal la validacion muestra el div que estaba oculto,el cual muestra nombre incorrecto
         
     }
 

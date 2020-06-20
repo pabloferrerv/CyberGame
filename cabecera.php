@@ -76,10 +76,16 @@ if(isset($_GET['a'])){
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-
-
+	<!-- Fuentes -->
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 
+
+
+	
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -113,33 +119,6 @@ if(isset($_GET['a'])){
 
 
 
-	
-
-
-	
-	
-
-
-
-
-
-
-
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
-
-
-
-	
-
-
-
-
 </head>
 <?php
 	$p="home";
@@ -153,18 +132,7 @@ if(isset($_GET['a'])){
 
 
 
-   
-  <!--    <div id="preloader">
-     <div class="loader">
-  			<div class="loader__bar"></div>
-  			<div class="loader__bar"></div>
-  			<div class="loader__bar"></div>
-  			<div class="loader__bar"></div>
-  			<div class="loader__bar"></div>
-  			<div class="loader__ball"></div>
-  		</div>
-      </div>  -->
-    
+
     
 	<div class="top-bar">
 		<div class="container-fluid">

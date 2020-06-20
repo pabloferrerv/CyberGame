@@ -519,6 +519,31 @@ margin-right: 2%;
 
 }
 
+.videojuegos{
+opacity: 1;
+
+
+}
+
+
+#reloj{
+
+    opacity: 0;
+}
+
+#carga{
+opacity: 0;
+
+}
+
+body{
+
+    opacity: 1;
+}
+
+
+
+
 
 
 }
