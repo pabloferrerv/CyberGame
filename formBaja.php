@@ -18,7 +18,7 @@
                 <h3>BORRAR DATOS USUARIO</h3>
 				<form id="loginform" class="row" action="index.php?P=borra" name="loginform" method="post">
                 <p class="lead">Selecciona usuario: <?php echo dibuja_select("usr_baja","usuarios","email",false) ?></p>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+				<div class="lead" id="btusr">
                        <button type="submit" value="borra_usr" id="modif_usr" name="borra_usr" class="btn btn-light btn-radius btn-brd grd1 btn-block">Envia Datos Seleccionados</button>
                 </div>
 				</form>

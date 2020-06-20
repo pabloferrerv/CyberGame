@@ -14,7 +14,7 @@
 			if(!empty($nombre) and !empty($email)and !empty($pass)and !empty($pass2)){
 				if(correoCorrecto($email)){
 					if($pass==$pass2){
-						$usr=new Usuario("",$nombre,$pass,$email,$tipo);
+						$usr=new Usuario("",$nombre,$email,$pass,$tipo);
 						if(!$usr->buscarUsuario()){
 							$msg=$usr->guardarUsuario();
 						}
@@ -35,7 +35,7 @@
 	?>
 	
 	
-        
+      
             <div class="section-title text-center">
                 <h3>ALTA NUEVO USUARIO</h3>
                 <p class="lead">Completa los campos con los datos del nuevo usuario</p>
@@ -45,7 +45,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="altaform" class="row" action="index.php?P=alta" name="altaform" method="post">
+                        <form id="altaform" class="row" action="index.php?P=alta" name="altaform" method="post" onsubmit="return validarForm2();">
                             <fieldset class="row-fluid">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">

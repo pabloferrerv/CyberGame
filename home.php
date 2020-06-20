@@ -17,6 +17,7 @@ if(isset($_GET['b'])){
    
 
 <?php } ?>
+
  <div class="testimonial clearfix">
 
                            
@@ -40,6 +41,19 @@ if(isset($_GET['comienzo'])){
 
 ?>	 
 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+<div id="reloj">
+<span class="clock"></span>
+</div>
+
+
+		<div id="carga"> <!-- barra de carga java script -->
+				<div 	style="border:1px solid green;margin:10px;width:400px;">
+  <div id="box" style="background:#98bf21;height:50px;width:1px;border:1px solid green;"></div>
+</div>
+
+<p id="demo"></p>
+</div>
 <?php
 	
   $total=Videojuego::totalVideojuegos();

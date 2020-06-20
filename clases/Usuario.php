@@ -18,7 +18,7 @@ class Usuario {
 	
 	public function guardarUsuario(){
 		$msg="";
-		$sql = "insert into usuarios values(null,'$this->nombre','$this->email','$this->pass','$this->tipo')";
+		$sql = "insert into usuarios values(null,'$this->nombre','$this->pass','$this->email','$this->tipo')";
 		//echo $sql;
 		$conexion=Conexion::conectarBD();
 		if ($conexion->query($sql))
@@ -84,12 +84,8 @@ class Usuario {
 		$email=$this->email;
 		// si el usuario tiene comentarios, no se puede borrar.
 		$linea_usr=$this->buscarUsuario();
-		$comentarios_usr=Comentario::buscaComentariosUsr($linea_usr['id_usr']);
-		if(count($comentarios_usr)>0){
-			$msg="El usuario $email tiene comentarios y no se puede borrar";
-		}
-		else{
-			
+	
+		
 			$sql="delete from usuarios where email='$email'";
 			//echo $sql;
 			$conexion=Conexion::conectarBD();
@@ -99,7 +95,7 @@ class Usuario {
 			else
 				$msg="error al borrar al usuario $email";
 			Conexion::desconectarBD($conexion);
-		}
+		
 		return $msg;
 
 		return $linea;

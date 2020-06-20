@@ -48,7 +48,8 @@
 -------------------------------------------------------------------*/
 
 body {
-    background-color:  #949292;
+    opacity: 0;
+    background-color:  #949292; /* color de fondo */
     color: #020202;
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
@@ -112,7 +113,7 @@ h6 {
 
 
 a {
-    color: #000000; /* COLOR BLOQUES VIDEOJUEGOS */
+    color: #000000; /* COLOR SIGUIENTE Y VOLVER AL PRINCIPIO */
     text-decoration: none;
     outline: none;
 }
@@ -243,8 +244,8 @@ header{
     z-index: 111;
 }
 
-.header_style_01 .navbar-default { /* BLOQUE INTERIOR DEL MENÚ SE HACE INVISIBLE PARA QUE NO SE */
-    background-color:  #282828 !important; 
+.header_style_01 .navbar-default { /* BLOQUE INTERIOR DEL MENÚ */
+    background-color:  #282828 !important;  /* //Fondo de la barra de menú */
     border: 0;
     border-radius: 0px;
 }
@@ -281,7 +282,7 @@ background-color:  #282828;
 
 .header_style_01 .navbar-default .navbar-nav > li:hover a,
 .header_style_01 .navbar-default .navbar-nav > li:focus a {
-    color: #ECECEC;/* COLOR LETRAS MENU AL PASAR POR ENCIMA */
+    color: #FFFFFF;/* COLOR LETRAS MENU AL PASAR POR ENCIMA */
     padding: 15px 15px;
     box-shadow: 0 10px 20px 0 #1A1A1A;/* COLOR SOMBRA Y PROFUNDIDAD */
     border-radius: 5px;
@@ -378,6 +379,7 @@ li.social-links a {
     margin: 0 0 25px;
     padding: 0;
     text-transform: none;
+    color: #2F2F2F;
 }
 
 
@@ -418,7 +420,7 @@ li.social-links a {
 
 .has-error .bootstrap-select .dropdown-toggle,
 .error .bootstrap-select .dropdown-toggle {
-    border-color: #620D0D;
+    border-color: #312C30;
 }
 
 .bootstrap-select.fit-width {
@@ -506,7 +508,7 @@ li.social-links a {
 }
 
 .bootstrap-select.btn-group .dropdown-menu {
-    border: 1px solid #ededed;
+    border: 1px solid #51484F;
     box-shadow: none;
     box-sizing: border-box;
     min-width: 100%;
@@ -734,19 +736,19 @@ select.mobile-device {
     color: #bcbcbc !important;
 }
 
-.contact_form {
+.contact_form { /* Formularios */
     border: 1px solid #ededed;
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 1);
-    background-color: #949292;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 1); 
+    background-color: #555454; /* Color fondo formulario */
     padding: 40px 30px;
 }
 
-.contact_form .form-control { /* parametros tipo de formulario */
+.contact_form .form-control { /* parametros tdentro formulario */
     background-color: #fff;
     margin-bottom: 30px;
     border: 1px solid #ebebeb;
     box-sizing: border-box;
-    color: #BCBCBC;
+    color: #B01A1A;
     font-size: 16px;
     outline: 0 none;
     padding: 10px 25px;
@@ -764,7 +766,7 @@ select.mobile-device {
 
 .contact_form .form-control::-webkit-input-placeholder {
 
-    color: #bcbcbc; /* COLOR LETRAS FORMULARIO */
+    color: #bcbcbc; /* COLOR LETRAS placeholder */
 }
 
 .contact_form .form-control::-moz-placeholder {
@@ -776,9 +778,6 @@ select.mobile-device {
     color: #bcbcbc;
 }
 
-#contact {
-    background: #949292; /* COLOR FONDO FORMULARIOS */
-}
 
 
 /*------------------------------------------------------------------
@@ -814,7 +813,7 @@ select.mobile-device {
 .footer {
     padding: 90px 0 80px !important;
     color: #999;
-    background-color: #393939;
+    background-color: #393939;/*  color fondo footer */
 }
 
 .footer .widget-title {
@@ -831,7 +830,7 @@ select.mobile-device {
 }
 
 .footer .widget-title h3 {
-    color: #fff;
+    color: #fff; /* color titulos footer */
     font-weight: 500;
     font-size: 21px;
     padding: 0;
@@ -845,7 +844,7 @@ select.mobile-device {
 }
 
 .footer-links a {
-    color: #999;
+    color: #999; /* color enlaces  */
     display: block;
 }
 
@@ -901,7 +900,7 @@ select.mobile-device {
 
 .copyrights {
     border-top: 1px dashed rgba(255, 255, 255, 0.1);
-    background-color: #1f1f1f;
+    background-color: #1f1f1f; /* fondo barra inferior */ 
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -933,16 +932,16 @@ select.mobile-device {
 .footer-distributed .footer-company-name {
     font-weight: 300;
     margin: 0 10px;
-    color: #666;
+    color: #666;/* color letras derechos */
     padding: 0;
 }
 
 .footer-distributed .footer-company-name a{
-    color: #ffffff;
+    color: #ffffff; /*color de titulo cybergame y html design */
 }
 
 .footer-distributed .footer-company-name a:hover{
-    color: #620D0D;
+    color: #620D0D; /* color de titulo cybergame y html design */
 }
 
 
@@ -963,39 +962,13 @@ select.mobile-device {
     position: relative;
 }
 
-.footer-distributed form input {
-    display: block;
-    border-radius: 3px;
-    box-sizing: border-box;
-    background-color: #181818;
-    border: none;
-    font: inherit;
-    font-size: 15px;
-    font-weight: normal;
-    color: #999;
-    width: 100%;
-    padding: 18px 50px 18px 18px;
-}
 
 .footer-distributed form input:focus {
     outline: none;
 }
 
 
-/* Changing the placeholder color */
 
-.footer-distributed form input::-webkit-input-placeholder {
-    color: #999;
-}
-
-.footer-distributed form input::-moz-placeholder {
-    opacity: 1;
-    color: #999;
-}
-
-.footer-distributed form input:-ms-input-placeholder {
-    color: #999;
-}
 
 
 /* The magnify glass icon */
@@ -1016,14 +989,7 @@ select.mobile-device {
     MISC FUNCION DE SUBIR ARRIBA EN LA PAGINA
 -------------------------------------------------------------------*/
 
-.progress {
-    background-color: #f2f3f5;
-    border-radius: 0;
-    box-shadow: none;
-    height: 5px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
+
 
 .skills h3 {
     color: #999999;
@@ -1031,7 +997,7 @@ select.mobile-device {
 }
 
 .dmtop {
-    background-color: #3C3D41;
+    background-color: #3C3D41; /* color boton subir */
     z-index: 100;
     width: 50px;
     height: 50px;
@@ -1552,7 +1518,7 @@ select.mobile-device {
 
 
 
-.btn-light { /* BOTON FORMULARIOS */
+.btn-light { /* BOTON FORMULARIOS y COMPRAS */
     padding: 13px 40px;
     font-size: 18px;
     border: 1px solid #1E1E1E;
@@ -1586,8 +1552,7 @@ select.mobile-device {
     left: 0px;
     top: 0px;
     width: 100%;
-    padding: 0px 0px;
-    background: rgba(70, 66, 68, 0.85); /* color de la barra fija */
+    padding: 0px 0px; /* color de la barra fija */
     z-index: 0;
     transition: all 1s ease-in-out;
     z-index: 999;
@@ -1653,12 +1618,6 @@ select.mobile-device {
     color: #393939;
 }
 
-.address-item h3{
-    font-size: 28px;
-    font-weight: 600;
-    color: #fd6802;
-}
-
 
 .dmtop.show {
     bottom: 20px;
@@ -1666,17 +1625,26 @@ select.mobile-device {
 
 
 /* --------VIDEOJUEGOS-------- */
+
+#carga{ /* Propiedades barra de carga */
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+
  .videojuegos{
- 	margin-top: 8%;
+    opacity: 0;
+ 	margin-top: 3%;
     display: grid;
-     grid-template-columns: repeat(2, 1fr 1fr);
-     margin-bottom: 2%;
+    grid-template-columns: repeat(2, 1fr 1fr);
+    margin-bottom: 2%;
 
 
  }
  .desc{
     margin-left: 2vh;
-     margin-right: 2vh;
+    margin-right: 2vh;
     margin-bottom:15%;
     display: flex;
     justify-content: center;
@@ -1815,7 +1783,7 @@ margin-right: 2%;
     display: flex;
     justify-content: space-around;
     padding: 1.5%;
-    background-color: #59585C;
+    background-color: #59585C; /* color fondo caja precio y boton comprar */
 
 }
 
@@ -1847,17 +1815,17 @@ font-size: 25px;
 
 }
 
-#titulop{
+#titulop{ /* titulo de la cabecera */
     margin: 3%;
-    font-size: 35px;
-    font-family: Fantasy;
-    letter-spacing: 2px;
+    font-size: 50px;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 4px;
    text-shadow: 1px 1px #949393, -1px -1px #333
 }
 
-#titulop::first-letter{
+#titulop::first-letter{ /* primera letra del titulo */
     color: #5B0C0C;
-    font-size: 80px;
+    font-size: 100px;
     }
 
 
@@ -1877,7 +1845,7 @@ font-size: 25px;
     font-size: 4.5vh;
 }
 .footer-right ul li a:hover{
-    color: #fd6802;
+    color: #620D0D;
 }
 
 
@@ -1887,5 +1855,17 @@ font-size: 25px;
     margin-bottom: 4%;
     margin-left: 2%;
     font-size: 2vh;
+
+}
+
+/* --------------------Reloj--------------------- */
+#reloj {display: flex;justify-content: space-around;}
+.clock{font-size: 50px;
+    background-color: #630C0C;
+    color:#D1CFCF;
+    padding:1%;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 10px 15px 10px -11px rgba(0,0,0,0.75);
+
 
 }

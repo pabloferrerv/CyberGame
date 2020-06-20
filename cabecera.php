@@ -62,6 +62,8 @@ if(isset($_GET['a'])){
 <!DOCTYPE html>
 <html lang="en">
 
+
+
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -75,9 +77,21 @@ if(isset($_GET['a'])){
     <meta name="description" content="">
     <meta name="author" content="">
 
+
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Add jQuery library -->
+	
+		<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -88,14 +102,43 @@ if(isset($_GET['a'])){
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
    
+	<!-- Scrips -->
+    <script src="js/customscrips.js"></script>
 
-    <!-- Modernizer for Portfolio -->
-    <script src="js/modernizer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+	
+
+
+	
+	
+
+
+
+
+
+
+
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+
+
+
+	
+
+
+
 
 </head>
 <?php
@@ -107,19 +150,21 @@ if(isset($_GET['a'])){
 
 <body>
 
-    <!-- LOADER -->
-     <!-- <div id="preloader">
-        <div class="loader">
-			<div class="loader__bar"></div>
-			<div class="loader__bar"></div>
-			<div class="loader__bar"></div>
-			<div class="loader__bar"></div>
-			<div class="loader__bar"></div>
-			<div class="loader__ball"></div>
-		</div>
-	QUITAR ESTO
-    </div> --> <!-- end loader -->
-    <!-- END LOADER -->
+
+
+
+   
+  <!--    <div id="preloader">
+     <div class="loader">
+  			<div class="loader__bar"></div>
+  			<div class="loader__bar"></div>
+  			<div class="loader__bar"></div>
+  			<div class="loader__bar"></div>
+  			<div class="loader__bar"></div>
+  			<div class="loader__ball"></div>
+  		</div>
+      </div>  -->
+    
     
 	<div class="top-bar">
 		<div class="container-fluid">
@@ -128,7 +173,14 @@ if(isset($_GET['a'])){
 					<div class="left-top">
 						<h1 id="titulop">CYBERGAME</h1>
 					</div>
+
+
 				</div>
+
+
+
+
+
 				<div class="col-md-6 col-sm-6">
 					<div class="right-top">
 						<div class="social-box">
@@ -168,18 +220,21 @@ if(isset($_GET['a'])){
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a <?php if($p=="home") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=home">Inicio</a></li>
-						<?php if(!isset($email)){ ?>
-							<li><a <?php if($p=="login") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=login">Login</a></li>
-						<?php }else{ ?>
-							<li><a href="<?php echo $_SERVER['PHP_SELF'] ?>?a=logout">Salir</a></li>
-							<li><a <?php if($p=="misPed") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=misPed">Mis Pedidios</a></li>
-						<?php } ?>
+				
 						<?php if(isset($email) and $tipo_usr=="adm"){ ?>
                         <li><a <?php if($p=="alta") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=alta">alta usuario</a></li>
                         <li><a <?php if($p=="modif") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=modif">modifica usuario</a></li>
                         <li><a <?php if($p=="borra") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=borra">baja usuario</a></li>
                           <li><a <?php if($p=="añad") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=añad">Añadir Juego</a></li>
                         
+						<?php } ?>
+
+								<?php if(!isset($email)){ ?>
+							<li><a <?php if($p=="login") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=login">Login</a></li>
+						<?php }else{ ?>
+							<li><a <?php if($p=="misPed") echo 'class="active"' ?> href="<?php echo $_SERVER['PHP_SELF'] ?>?P=misPed">Mis Pedidios</a></li>
+							<li><a href="<?php echo $_SERVER['PHP_SELF'] ?>?a=logout">Salir</a></li>
+							
 						<?php } ?>
                     </ul>
                 </div>

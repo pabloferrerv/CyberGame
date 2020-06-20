@@ -28,10 +28,6 @@
 				
 
 
-	
-	
-
-
 
 
 
@@ -39,7 +35,10 @@
 
 		<div id="fondo">
 	 <div id="infvideojuego">
-	 	<div id="bloqueimagen"><?php  echo "<img src='$imagen' width='100%' >" ?></div>
+	 	<div id="bloqueimagen"> <?php  echo "<a href='$imagen' rel='bloqueimagen' >" ?> <?php  echo "<img src='$imagen' width='100%' rel='bloqueimagen' > </a>" ?>
+	 		
+
+	 	</div>
 	 	<div id="bloqueinformacion">
 	 		<div id="bloqueinfo2">
 	 	<span><h1 id="titulo"><?php  echo "<b>$nombre</b>" ?></h1></span>

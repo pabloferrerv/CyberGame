@@ -82,7 +82,7 @@
                 <h3>MODIFICAR DATOS USUARIO</h3>
 				<form id="loginform" class="row" action="index.php?P=modif" name="loginform" method="post">
                 <p class="lead">Selecciona usuario: <?php echo dibuja_select("usr_modif","usuarios","email",false) ?></p>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+				<div class="lead">
                        <button type="submit" value="modif_usr" id="modif_usr" name="modif_usr" class="btn btn-light btn-radius btn-brd grd1 btn-block">Envia Datos Seleccionados</button>
                 </div>
 				</form>

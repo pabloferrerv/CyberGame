@@ -17,7 +17,7 @@
 if($tipo_usr=="adm"||$tipo_usr=="usr"){ //tiene que estar logueado para poder ver la factura
 ?>
 
- <p><a <?php if($p=="factura") echo 'class="active"' ?> href="<?php echo "factura.php" ?>?c=<?php echo $id_vid ?>"><button>Ver factura</button></a></p>
+ <p><a <?php if($p=="factura") echo 'class="active"' ?> href="<?php echo "factura.php" ?>?c=<?php echo $id_vid ?>" target="_blank"><button>Ver factura</button></a></p> <!-- una vez de ha comprado esta la opcion de mostrar la factura,que se abrira en una nueva ventana -->
 
 
 <?php } } ?>

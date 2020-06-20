@@ -1,3 +1,8 @@
+    
+<div class="section-title text-center">
+	<br>
+		<h3>MIS PEDIDIOS</h3>
+	</div>
     <div id="pedidos">
     <?php		
     		
